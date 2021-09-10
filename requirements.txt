@@ -1,0 +1,12 @@
+selenium
+requests
+beautifulsoup4
+csv
+pandas
+re
+ast
+numpy
+urllib
+cv2
+time
+os, re, os.path
