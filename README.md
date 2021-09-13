@@ -59,5 +59,5 @@ _Equipo #._
 * **#**
 * **#**
 * **#**
-* **#**
+* **Luis Miguel Maawad Hinojosa**
 * **Juan Edgar Juarez Mendoza**
