@@ -2,35 +2,32 @@
 
 # Actividad Integradora 2
 
-_Clasificador de imágenes de alimentos (hamburguesa, pasta, pizza, ensalada, atún)._
+_Clasificador de sentimientos de tweets (positivos y negativos)._
 
 ## Requerimientos ⚙️
 
-El código está hecho en un Jupyter Notebook con Python 3. Se pueden instalar las dependencias usando el archivo de repositorio requirements.txt
+El código está desarrollado en un Jupyter Notebook con Python 3. Igualmente, se pueden instalar las dependencias usando el archivo del repositorio requirements.txt
 
 > pip install -r requirements.txt
 
-* tensorflow-gpu
-* scikit-learn
-* pandas
-* numpy
-* selenium
-* beautifulsoup4
-* urllib
-* cv2
-* matplotlib
+* scikit-learn ***
+* pandas ***
+* numpy ***
+* matplotlib ***
+
+## ¿Qué hace el proyecto? 📄
+
+El proyecto se trata de un analizador de sentimientos de tweets publicados en la red social "Twitter" en tiempo real. Específicamente, clasifica los tweets como positivos o negativos. Posteriormente, despliega una gráfica del análisis realizado a los tweets.
 
 ## ¿Cómo funciona el clasificador? 📄
 
-### 1. Web scraping  📦
+### 1. Ingreso de datos de entrada  📦
 
-Hicimos web scraping con la base de datos de imágenes [Shutterstock](https://www.shutterstock.com/es/) junto con un driver de gecko para Firefox que nos permite hacer la exploración del sitio web, hacer la búsqueda de imágenes y descargarlas en su respectiva clasificación. Para este fin se usaron las bibliotecas  **beautifulsoup4**, **selenium**, **cv2**, y **urllib**.
+D
 
-**El usuario tendrá que escribir los términos de búsqueda para descargar las imágenes. Debe escribir las categorías "hamburger, pasta, pizza, salad, tuna". Finalmente escribir la palabra "exit" para terminar este proceso.**
+Una vez que se descargan las imágenes, son guardadas en distintas carpetas que serán usadas para el resto del proceso. Los tweets de cada clasificación son separadas en carpetas train con 70% de datos, test con 20% de datos y validation con 10% de datos.
 
-Una vez que se descargan las imágenes, son guardadas en distintas carpetas que serán usadas para el resto del proceso. Las imágenes de cada clasificación son separadas en carpetas train con 70% de datos, test con 20% de datos y validation con 10% de datos.
-
-### 2. Data augmentation 💻
+### 2. Data augmentation (no sé si aplique) 💻
 
 El programa usa dos técnicas de data augmentation para generar más datos en el dataset de entrenamiento. Esta fase consta en buscar las imágenes ya ordenadas dentro de la carpeta train para cada una de las categorías hamburguer, pasta, pizza, salad y tuna. Por cada una de las imágenes que encuentra en las carpetas, usa las herramientas RandomFlip y RandomRotation para generar más imágenes de entrenamiento y las guarda en las mismas carpetas.
 
@@ -48,16 +45,20 @@ En el modelo MobileNet se quitaron las últimas 5 capas, se agregó una nueva ca
 
 Este modelo usa regularización l1_l2. Esta estrategia penaliza los parámetros que causan overfitting en el modelo.
 
+## ¿Por qué el proyecto es de utilidad? 📄
+
+Por un lado, el proyecto es de gran utilidad para conocer la tendencia emocional en ciertas regiones en tiempo real. Por otro lado, sirve para conocer la utilidad y funcionamiento de distintas librerías enfocadas en el pre-procesamiento y análisis de textos; en especial, la librería NLTK.
+
 ## Observaciones
 
-Las pruebas se hicieron con los resultados de imágenes de shutterstock con las palabras "hamburger, pasta, pizza, salad, tuna", estas palabras deben ser usadas para que funcione el código como está escrito en el repositorio, ya que en algunas partes del código tiene escritas las palabras específicamente. Para mejorar los resultados de las búsquedas se puede usar un término de búsqueda mejor como "pasta food" que tendría que escribirse de igual manera en las partes del código que lo requieran para usar mejores resultados de imágenes.
+Ejemplo: Las pruebas se hicieron con los resultados de imágenes de shutterstock con las palabras "hamburger, pasta, pizza, salad, tuna", estas palabras deben ser usadas para que funcione el código como está escrito en el repositorio, ya que en algunas partes del código tiene escritas las palabras específicamente. Para mejorar los resultados de las búsquedas se puede usar un término de búsqueda mejor como "pasta food" que tendría que escribirse de igual manera en las partes del código que lo requieran para usar mejores resultados de imágenes.
 
 ## Autores 📝
 
-_Equipo #._
+_Equipo #3._
 
-* **#**
-* **#**
-* **#**
+* **Carlos Adrián Guerra Vázquez**
+* **Omar Osvaldo Hernández Díaz**
+* **Jesús Carlos Martínez González**
 * **Luis Miguel Maawad Hinojosa**
 * **Juan Edgar Juarez Mendoza**
