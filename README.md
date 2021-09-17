@@ -2,7 +2,7 @@
 
 # Actividad Integradora 2
 
-_Clasificador de sentimientos de tweets (positivos y negativos)._
+_Clasificador de sentimientos de tweets_
 
 ## Requerimientos ⚙️
 
@@ -41,7 +41,7 @@ En el modelo VGG16 se quitó la última capa, y se agregó una nueva capa de 5 n
 
 En el modelo MobileNet se quitaron las últimas 5 capas, se agregó una nueva capa de 5 nodos como salida para las clasificaciones de las nuevas clases. Finalmente se dejaron como entrenables únicamente las últimas 23 capas.
 
-### 4. Regularización del modelo 🚀
+### 4. Regularización del modelo (tampoco sé si aplique) 🚀
 
 Este modelo usa regularización l1_l2. Esta estrategia penaliza los parámetros que causan overfitting en el modelo.
 
@@ -55,7 +55,7 @@ Ejemplo: Las pruebas se hicieron con los resultados de imágenes de shutterstock
 
 ## Autores 📝
 
-_Equipo #3._
+_Equipo #3:_
 
 * **Carlos Adrián Guerra Vázquez**
 * **Omar Osvaldo Hernández Díaz**
