@@ -51,7 +51,10 @@ Por un lado, el proyecto es de gran utilidad para conocer la tendencia emocional
 
 ## Observaciones
 
-Ejemplo: Las pruebas se hicieron con los resultados de imágenes de shutterstock con las palabras "hamburger, pasta, pizza, salad, tuna", estas palabras deben ser usadas para que funcione el código como está escrito en el repositorio, ya que en algunas partes del código tiene escritas las palabras específicamente. Para mejorar los resultados de las búsquedas se puede usar un término de búsqueda mejor como "pasta food" que tendría que escribirse de igual manera en las partes del código que lo requieran para usar mejores resultados de imágenes.
+La ultima parte del projecto de graficar los resultados del clasificador en tiempo real no se pudo ejecutar en una jupyter notebook, pero se agrego el código en su propio archivo "animation.py" el cual se puede correr mientras se ejecuta la clasificacion de los tweets para asi poder ver en tiempo real los resultados. 
+
+Para la correcta ejecución del código se necesita del archivo ./pickled_algos/featuresets.pickle . Estearchivo era muy grande para subir a github y por lo tanto se tiene que descargar desde este link: https://drive.google.com/file/d/1czdguArJIUFA0dW-hL-bau6nKrZRKDTb/view?usp=sharing
+featuresets.pickle se debe de agregar al directorio ./pickled_algos
 
 ## Autores 📝
 
