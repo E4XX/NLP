@@ -56,7 +56,7 @@ Por un lado, el proyecto es de gran utilidad para conocer la tendencia emocional
 La ultima parte del projecto de graficar los resultados del clasificador en tiempo real no se pudo ejecutar en una jupyter notebook, pero se agregó el código en su propio archivo "animation.py" el cual se puede correr mientras se ejecuta la clasificación de los tweets para asi poder ver en tiempo real los resultados. 
 
 Para la correcta ejecución del código, se necesita del archivo "./pickled_algos/featuresets.pickle". Este archivo era muy grande para subir a github, y por lo tanto se tiene que descargar desde este link: https://drive.google.com/file/d/1czdguArJIUFA0dW-hL-bau6nKrZRKDTb/view?usp=sharing
-featuresets.pickle se debe de agregar al directorio ./pickled_algos
+Cabe destacar que, "featuresets.pickle" se debe de agregar al directorio "./pickled_algos".
 
 ## Autores 📝
 
