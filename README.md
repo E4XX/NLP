@@ -6,14 +6,16 @@ _Clasificador de sentimientos de tweets_
 
 ## Requerimientos ⚙️
 
-El código está desarrollado en un Jupyter Notebook con Python 3. Igualmente, se pueden instalar las dependencias usando el archivo del repositorio requirements.txt
+El código está desarrollado en un Jupyter Notebook con Python 3. Igualmente, las siguientes dependencias son requeridas:
 
-> pip install -r requirements.txt
-
-* scikit-learn ***
-* pandas ***
-* numpy ***
-* matplotlib ***
+* import nltk
+* import pickle
+* from nltk.classify.scikitlearn import SklearnClassifier
+* from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
+* from sklearn.linear_model import LogisticRegression, SGDClassifier
+* from sklearn.svm import SVC, LinearSVC, NuSVC
+* from nltk.classify import ClassifierI
+* from statistics import mode
 
 ## ¿Qué hace el proyecto? 📄
 
@@ -51,9 +53,9 @@ Por un lado, el proyecto es de gran utilidad para conocer la tendencia emocional
 
 ## Observaciones
 
-La ultima parte del projecto de graficar los resultados del clasificador en tiempo real no se pudo ejecutar en una jupyter notebook, pero se agrego el código en su propio archivo "animation.py" el cual se puede correr mientras se ejecuta la clasificacion de los tweets para asi poder ver en tiempo real los resultados. 
+La ultima parte del projecto de graficar los resultados del clasificador en tiempo real no se pudo ejecutar en una jupyter notebook, pero se agregó el código en su propio archivo "animation.py" el cual se puede correr mientras se ejecuta la clasificación de los tweets para asi poder ver en tiempo real los resultados. 
 
-Para la correcta ejecución del código se necesita del archivo ./pickled_algos/featuresets.pickle . Estearchivo era muy grande para subir a github y por lo tanto se tiene que descargar desde este link: https://drive.google.com/file/d/1czdguArJIUFA0dW-hL-bau6nKrZRKDTb/view?usp=sharing
+Para la correcta ejecución del código, se necesita del archivo "./pickled_algos/featuresets.pickle". Este archivo era muy grande para subir a github, y por lo tanto se tiene que descargar desde este link: https://drive.google.com/file/d/1czdguArJIUFA0dW-hL-bau6nKrZRKDTb/view?usp=sharing
 featuresets.pickle se debe de agregar al directorio ./pickled_algos
 
 ## Autores 📝
